@@ -114,10 +114,10 @@ function updateThemeIcon(theme) {
 const typedEl = document.getElementById('typed');
 const phrases = [
   'Siswa TJKT | SMK Wikrama Bogor',
-  'Network Engineer Enthusiast',
-  'Linux & Mikrotik Learner',
-  'Cyber Security Enthusiast',
-  'Future IT Professional',
+  'Cloud Computing Enthusiast',
+  'Linux System Administrator',
+  'Computer Networking Enthusiast',
+  'Future Cloud Engineer',
 ];
 let phraseIndex = 0;
 let charIndex = 0;
