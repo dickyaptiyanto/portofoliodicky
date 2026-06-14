@@ -113,11 +113,11 @@ function updateThemeIcon(theme) {
 /* ===== TYPED TEXT EFFECT ===== */
 const typedEl = document.getElementById('typed');
 const phrases = [
-  'Siswa TJKT | SMK Wikrama Bogor',
   'Cloud Computing Enthusiast',
   'Linux System Administrator',
   'Computer Networking Enthusiast',
   'Future Cloud Engineer',
+  'Future Infrastructure Engineer'
 ];
 let phraseIndex = 0;
 let charIndex = 0;
