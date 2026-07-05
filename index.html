@@ -5,652 +5,528 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mochammad Dicky Apriyanto | TJKT Portfolio</title>
   <meta name="description" content="Portfolio pribadi Mochammad Dicky Apriyanto - Siswa TJKT SMK Wikrama Bogor. Cloud Computing Enthusiast, Linux, Mikrotik, dan Networking." />
-
-  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
-
-  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-
-  <!-- AOS Animation -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
-
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- ===== LOADING SCREEN ===== -->
-  <div id="loading-screen">
-    <div class="loader">
-      <div class="loader-ring"></div>
-      <div class="loader-ring"></div>
-      <div class="loader-ring"></div>
-      <p class="loader-text">Loading<span class="dots">...</span></p>
+<!-- ===== LOADING SCREEN ===== -->
+<div id="loading-screen">
+  <div class="loader">
+    <div class="loader-ring"></div>
+    <div class="loader-ring"></div>
+    <div class="loader-ring"></div>
+    <p class="loader-text">Loading<span class="dots">...</span></p>
+  </div>
+</div>
+
+<!-- ===== NAVBAR ===== -->
+<nav id="navbar">
+  <div class="nav-container">
+    <a href="#beranda" class="nav-logo">
+      <span class="logo-bracket">&lt;</span>Dicky<span class="logo-bracket">/&gt;</span>
+    </a>
+    <ul class="nav-menu" id="nav-menu">
+      <li><a href="#beranda" class="nav-link active">Beranda</a></li>
+      <li><a href="#tentang" class="nav-link">Tentang Saya</a></li>
+      <li><a href="#keahlian" class="nav-link">Keahlian</a></li>
+      <li><a href="#proyek" class="nav-link">Proyek</a></li>
+      <li><a href="#sertifikat" class="nav-link">Sertifikat</a></li>
+      <li><a href="#kontak" class="nav-link">Kontak</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button id="theme-toggle" class="theme-btn" aria-label="Toggle dark/light mode">
+        <i class="fas fa-sun" id="theme-icon"></i>
+      </button>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
     </div>
   </div>
+</nav>
 
-  <!-- ===== NAVBAR ===== -->
-  <nav id="navbar">
-    <div class="nav-container">
-      <a href="#beranda" class="nav-logo">
-        <span class="logo-bracket">&lt;</span>Dicky<span class="logo-bracket">/&gt;</span>
-      </a>
-      <ul class="nav-menu" id="nav-menu">
-        <li><a href="#beranda" class="nav-link active">Beranda</a></li>
-        <li><a href="#tentang" class="nav-link">Tentang Saya</a></li>
-        <li><a href="#keahlian" class="nav-link">Keahlian</a></li>
-        <li><a href="#proyek" class="nav-link">Proyek</a></li>
-        <li><a href="#sertifikat" class="nav-link">Sertifikat</a></li>
-        <li><a href="#kontak" class="nav-link">Kontak</a></li>
-      </ul>
-      <div class="nav-actions">
-        <button id="theme-toggle" class="theme-btn" aria-label="Toggle dark/light mode">
-          <i class="fas fa-sun" id="theme-icon"></i>
-        </button>
-        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
-          <span></span><span></span><span></span>
-        </button>
+<!-- ===== HERO SECTION ===== -->
+<section id="beranda" class="hero">
+  <div class="hero-bg">
+    <div class="hero-grid"></div>
+    <div class="hero-blob blob-1"></div>
+    <div class="hero-blob blob-2"></div>
+    <div class="hero-blob blob-3"></div>
+  </div>
+  <div class="hero-container">
+    <div class="hero-content" data-aos="fade-right" data-aos-duration="1000">
+      <div class="hero-badge">
+        <i class="fas fa-circle-dot pulse"></i>
+        <span>Open to Opportunities</span>
       </div>
-    </div>
-  </nav>
-
-  <!-- ===== HERO SECTION ===== -->
-  <section id="beranda" class="hero">
-    <div class="hero-bg">
-      <div class="hero-grid"></div>
-      <div class="hero-blob blob-1"></div>
-      <div class="hero-blob blob-2"></div>
-      <div class="hero-blob blob-3"></div>
-    </div>
-    <div class="hero-container">
-      <div class="hero-content" data-aos="fade-right" data-aos-duration="1000">
-        <div class="hero-badge">
-          <i class="fas fa-circle-dot pulse"></i>
-          <span>Open to Opportunities</span>
-        </div>
-        <h1 class="hero-title">
-          Hi, Saya <br />
-          <span class="gradient-text">Mochammad Dicky</span><br />
-          <span class="gradient-text">Apriyanto</span>
-        </h1>
-        <p class="hero-subtitle">
-          <span class="typed-text" id="typed"></span>
-          <span class="cursor">|</span>
-        </p>
-       <p class="hero-desc">
-  Siswa TJKT SMK Wikrama Bogor yang berfokus pada 
-  <strong>Cloud Computing</strong>, 
-  <strong>Linux System Administration</strong>, dan 
-  <strong>Computer Networking</strong>.
-  Aktif mempelajari teknologi server, virtualisasi, jaringan komputer,
-  serta infrastruktur cloud untuk membangun karier sebagai
-  <strong>Cloud Engineer</strong> dan <strong>System Administrator</strong>.
-</p>
-        <div class="hero-btns">
-          <a href="#proyek" class="btn btn-primary">
-            <i class="fas fa-folder-open"></i> Lihat Portofolio
-          </a>
-          <a href="#kontak" class="btn btn-outline">
-            <i class="fas fa-paper-plane"></i> Hubungi Saya
-          </a>
-        </div>
-        <div class="hero-stats">
-          <div class="stat-item">
-            <span class="stat-num">4+</span>
-            <span class="stat-label">Proyek Selesai</span>
-          </div>
-          <div class="stat-divider"></div>
-          <div class="stat-item">
-            <span class="stat-num">8+</span>
-            <span class="stat-label">Keahlian</span>
-          </div>
-          <div class="stat-divider"></div>
-          <div class="stat-item">
-            <span class="stat-num">3+</span>
-            <span class="stat-label">Sertifikat</span>
-          </div>
-        </div>
-      </div>
-      <div class="hero-visual" data-aos="fade-left" data-aos-duration="1000">
-        <div class="profile-wrapper">
-          <div class="profile-ring ring-1"></div>
-          <div class="profile-ring ring-2"></div>
-          <div class="profile-ring ring-3"></div>
-          <div class="profile-img-container">
-            <img src="https://ui-avatars.com/api/?name=Mochammad+Dicky+Apriyanto&background=0a192f&color=64ffda&size=400&bold=true&font-size=0.33" alt="Mochammad Dicky Apriyanto" class="profile-img" id="profile-img" />
-          </div>
-          <div class="floating-badge badge-1">
-            <i class="fas fa-network-wired"></i>
-            <span>Cloud</span>
-          </div>
-          <div class="floating-badge badge-2">
-            <i class="fab fa-linux"></i>
-            <span>Network</span>
-          </div>
-          <div class="floating-badge badge-3">
-            <i class="fas fa-shield-halved"></i>
-            <span>Linux</span>
-          </div>
-        </div>
-      </div>
-    </div>
-    <a href="#tentang" class="scroll-down">
-      <div class="scroll-mouse">
-        <div class="scroll-wheel"></div>
-      </div>
-      <span>Scroll Down</span>
-    </a>
-  </section>
-
-  <!-- ===== TENTANG SAYA ===== -->
-  <section id="tentang" class="section about">
-    <div class="container">
-      <div class="section-header" data-aos="fade-up">
-        <span class="section-tag"><i class="fas fa-user"></i> Tentang</span>
-        <h2 class="section-title">Tentang <span class="gradient-text">Saya</span></h2>
-        <p class="section-subtitle">Kenali lebih dekat siapa saya dan apa yang saya kejar</p>
-      </div>
-      <div class="about-grid">
-        <div class="about-img-wrapper" data-aos="fade-right" data-aos-delay="100">
-          <div class="about-img-frame">
-            <img src="https://ui-avatars.com/api/?name=Mochammad+Dicky+Apriyanto&background=0a192f&color=64ffda&size=400&bold=true&font-size=0.33" alt="Mochammad Dicky Apriyanto" class="about-img" />
-            <div class="about-img-overlay">
-              <div class="about-tag-list">
-                <span class="about-tag"><i class="fas fa-map-marker-alt"></i> Bogor, Indonesia</span>
-                <span class="about-tag"><i class="fas fa-graduation-cap"></i> SMK Wikrama Bogor</span>
-                <span class="about-tag"><i class="fas fa-code-branch"></i> TJKT</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="about-content" data-aos="fade-left" data-aos-delay="200">
-          <h3 class="about-greeting">Halo! Perkenalkan saya</h3>
-          <h2 class="about-name">Mochammad Dicky Apriyanto</h2>
-          <p class="about-desc">
-            Saya adalah seorang siswa aktif di SMK Wikrama Bogor jurusan 
-            <strong>Teknik Jaringan Komputer dan Telekomunikasi (TJKT)</strong>. 
-            Dengan passion yang kuat di bidang teknologi, saya terus belajar dan 
-            mengembangkan diri untuk menjadi seorang IT Professional.
-          </p>
-         <p class="about-desc">
-  Minat utama saya meliputi administrasi sistem 
-  <strong>Linux</strong>, konfigurasi jaringan menggunakan 
-  <strong>Mikrotik</strong> dan <strong>Cisco</strong>, serta 
-  eksplorasi teknologi <strong>Cloud Computing</strong>,
-  virtualisasi, dan server yang menjadi fondasi infrastruktur IT modern.
-</p>
-
-          <div class="about-cards">
-            <div class="about-card glass">
-              <i class="fas fa-graduation-cap"></i>
-              <div>
-                <h4>Pendidikan</h4>
-                <p>SMK Wikrama Bogor</p>
-                <span>Jurusan TJKT • 2023 – 2026</span>
-              </div>
-            </div>
-            <div class="about-card glass">
-              <i class="fas fa-bullseye"></i>
-              <div>
-                <h4>Tujuan Karier</h4>
-                <p>Cloud Engineer</p>
-                <span>Linux System Administrator</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="about-info-grid">
-            <div class="info-item">
-              <span class="info-label"><i class="fas fa-user-tag"></i> Nama</span>
-              <span class="info-value">Mochammad Dicky Apriyanto</span>
-            </div>
-            <div class="info-item">
-              <span class="info-label"><i class="fas fa-school"></i> Sekolah</span>
-              <span class="info-value">SMK Wikrama Bogor</span>
-            </div>
-            <div class="info-item">
-              <span class="info-label"><i class="fas fa-code"></i> Jurusan</span>
-              <span class="info-value">TJKT</span>
-            </div>
-            <div class="info-item">
-              <span class="info-label"><i class="fas fa-map-pin"></i> Lokasi</span>
-              <span class="info-value">Bogor, Jawa Barat</span>
-            </div>
-          </div>
-
-          <a href="#kontak" class="btn btn-primary">
-            <i class="fas fa-handshake"></i> Mari Berkolaborasi
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== KEAHLIAN ===== -->
-<section id="keahlian" class="skills section">
-  <div class="container">
-
-    <div class="section-header">
-      <span class="section-badge">
-        <i class="fas fa-laptop-code"></i>
-        KEAHLIAN
-      </span>
-
-      <h2 class="section-title">
-        Fokus Pembelajaran & <span class="gradient-text">Keahlian</span>
-      </h2>
-
-      <p class="section-desc">
-        Bidang yang saya pelajari dan kembangkan sebagai siswa TJKT SMK Wikrama Bogor.
+      <h1 class="hero-title">
+        Hi, Saya <br />
+        <span class="gradient-text">Mochammad Dicky</span><br />
+        <span class="gradient-text">Apriyanto</span>
+      </h1>
+      <p class="hero-subtitle">
+        <span class="typed-text" id="typed"></span>
+        <span class="cursor">|</span>
       </p>
+      <p class="hero-desc">
+        Siswa TJKT SMK Wikrama Bogor yang berfokus pada <strong>Cloud Computing</strong>,
+        <strong>Linux System Administration</strong>, dan <strong>Computer Networking</strong>.
+        Aktif mempelajari teknologi server, virtualisasi, jaringan komputer,
+        serta infrastruktur cloud untuk membangun karier sebagai
+        <strong>Cloud Engineer</strong> dan <strong>System Administrator</strong>.
+      </p>
+      <div class="hero-btns">
+        <a href="#proyek" class="btn btn-primary"><i class="fas fa-folder-open"></i> Lihat Portofolio</a>
+        <a href="#kontak" class="btn btn-outline"><i class="fas fa-paper-plane"></i> Hubungi Saya</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <span class="stat-num">4+</span>
+          <span class="stat-label">Proyek Selesai</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-num">8+</span>
+          <span class="stat-label">Keahlian</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-num">3+</span>
+          <span class="stat-label">Sertifikat</span>
+        </div>
+      </div>
     </div>
-
-    <div class="skill-grid">
-
-      <div class="skill-card">
-        <div class="skill-icon">
-          <i class="fas fa-cloud"></i>
+    <div class="hero-visual" data-aos="fade-left" data-aos-duration="1000">
+      <div class="profile-wrapper">
+        <div class="profile-ring ring-1"></div>
+        <div class="profile-ring ring-2"></div>
+        <div class="profile-ring ring-3"></div>
+        <div class="profile-img-container">
+          <img src="foto.jpg" alt="Mochammad Dicky Apriyanto" class="profile-img" id="profile-img"
+            onerror="this.src='https://ui-avatars.com/api/?name=Mochammad+Dicky+Apriyanto&background=0a192f&color=64ffda&size=400&bold=true&font-size=0.33'" />
         </div>
-        <h3>Cloud Computing</h3>
-        <p>
-          Mempelajari virtualisasi, cloud infrastructure,
-          VPS management, deployment server,
-          dan teknologi cloud modern.
-        </p>
+        <div class="floating-badge badge-1"><i class="fas fa-cloud"></i><span>Cloud</span></div>
+        <div class="floating-badge badge-2"><i class="fab fa-linux"></i><span>Linux</span></div>
+        <div class="floating-badge badge-3"><i class="fas fa-network-wired"></i><span>Network</span></div>
       </div>
-
-      <div class="skill-card">
-        <div class="skill-icon">
-          <i class="fab fa-linux"></i>
-        </div>
-        <h3>Linux Administration</h3>
-        <p>
-          Mengelola Ubuntu dan Debian,
-          terminal Linux, user management,
-          serta konfigurasi server dasar.
-        </p>
-      </div>
-
-      <div class="skill-card">
-        <div class="skill-icon">
-          <i class="fas fa-network-wired"></i>
-        </div>
-        <h3>Computer Networking</h3>
-        <p>
-          Konfigurasi jaringan komputer,
-          subnetting, routing, switching,
-          Mikrotik dan Cisco Packet Tracer.
-        </p>
-      </div>
-
-      <div class="skill-card">
-        <div class="skill-icon">
-          <i class="fas fa-server"></i>
-        </div>
-        <h3>Server Administration</h3>
-        <p>
-          Instalasi dan konfigurasi web server,
-          DNS server, DHCP server,
-          serta layanan jaringan berbasis Linux.
-        </p>
-      </div>
-
-      <div class="skill-card">
-        <div class="skill-icon">
-          <i class="fas fa-tools"></i>
-        </div>
-        <h3>Hardware & Troubleshooting</h3>
-        <p>
-          Perakitan komputer,
-          instalasi sistem operasi,
-          serta troubleshooting hardware dan software.
-        </p>
-      </div>
-
-      <div class="skill-card">
-        <div class="skill-icon">
-          <i class="fas fa-project-diagram"></i>
-        </div>
-        <h3>Network Infrastructure</h3>
-        <p>
-          Cabling, access point,
-          topologi jaringan,
-          dan implementasi jaringan skala kecil.
-        </p>
-      </div>
-
     </div>
+  </div>
+  <a href="#tentang" class="scroll-down">
+    <div class="scroll-mouse"><div class="scroll-wheel"></div></div>
+    <span>Scroll Down</span>
+  </a>
+</section>
 
-    <div class="tools-section">
-
-      <h3 class="tools-title">
-        <i class="fas fa-tools"></i>
-        Tools & Technologies
-      </h3>
-
-      <div class="tools-grid">
-
-        <div class="tool-card">Linux</div>
-        <div class="tool-card">Ubuntu</div>
-        <div class="tool-card">Debian</div>
-        <div class="tool-card">Mikrotik</div>
-        <div class="tool-card">Cisco</div>
-        <div class="tool-card">Packet Tracer</div>
-        <div class="tool-card">Cloud</div>
-        <div class="tool-card">Server</div>
-        <div class="tool-card">Terminal</div>
-        <div class="tool-card">VirtualBox</div>
-        <div class="tool-card">Git</div>
-        <div class="tool-card">HTML & CSS</div>
-
-      </div>
-
+<!-- ===== TENTANG SAYA ===== -->
+<section id="tentang" class="section about">
+  <div class="container">
+    <div class="section-header" data-aos="fade-up">
+      <span class="section-tag"><i class="fas fa-user"></i> Tentang</span>
+      <h2 class="section-title">Tentang <span class="gradient-text">Saya</span></h2>
+      <p class="section-subtitle">Kenali lebih dekat siapa saya dan apa yang saya kejar</p>
     </div>
-
+    <div class="about-grid">
+      <div class="about-img-wrapper" data-aos="fade-right" data-aos-delay="100">
+        <div class="about-img-frame">
+          <img src="foto.jpg" alt="Mochammad Dicky Apriyanto" class="about-img"
+            onerror="this.src='https://ui-avatars.com/api/?name=Mochammad+Dicky+Apriyanto&background=0a192f&color=64ffda&size=400&bold=true&font-size=0.33'" />
+          <div class="about-img-overlay">
+            <div class="about-tag-list">
+              <span class="about-tag"><i class="fas fa-map-marker-alt"></i> Bogor, Indonesia</span>
+              <span class="about-tag"><i class="fas fa-graduation-cap"></i> SMK Wikrama Bogor</span>
+              <span class="about-tag"><i class="fas fa-code-branch"></i> TJKT</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="about-content" data-aos="fade-left" data-aos-delay="200">
+        <h3 class="about-greeting">Halo! Perkenalkan saya</h3>
+        <h2 class="about-name">Mochammad Dicky Apriyanto</h2>
+        <p class="about-desc">
+          Saya adalah seorang siswa aktif di SMK Wikrama Bogor jurusan
+          <strong>Teknik Jaringan Komputer dan Telekomunikasi (TJKT)</strong>.
+          Dengan passion yang kuat di bidang teknologi, saya terus belajar dan
+          mengembangkan diri untuk menjadi seorang IT Professional.
+        </p>
+        <p class="about-desc">
+          Minat utama saya meliputi administrasi sistem <strong>Linux</strong>,
+          konfigurasi jaringan menggunakan <strong>Mikrotik</strong> dan <strong>Cisco</strong>,
+          serta eksplorasi teknologi <strong>Cloud Computing</strong>,
+          virtualisasi, dan server yang menjadi fondasi infrastruktur IT modern.
+        </p>
+        <div class="about-cards">
+          <div class="about-card glass">
+            <i class="fas fa-graduation-cap"></i>
+            <div>
+              <h4>Pendidikan</h4>
+              <p>SMK Wikrama Bogor</p>
+              <span>Jurusan TJKT • 2023 – 2026</span>
+            </div>
+          </div>
+          <div class="about-card glass">
+            <i class="fas fa-bullseye"></i>
+            <div>
+              <h4>Tujuan Karier</h4>
+              <p>Cloud Engineer</p>
+              <span>Linux System Administrator</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-info-grid">
+          <div class="info-item">
+            <span class="info-label"><i class="fas fa-user-tag"></i> Nama</span>
+            <span class="info-value">Mochammad Dicky Apriyanto</span>
+          </div>
+          <div class="info-item">
+            <span class="info-label"><i class="fas fa-school"></i> Sekolah</span>
+            <span class="info-value">SMK Wikrama Bogor</span>
+          </div>
+          <div class="info-item">
+            <span class="info-label"><i class="fas fa-code"></i> Jurusan</span>
+            <span class="info-value">TJKT</span>
+          </div>
+          <div class="info-item">
+            <span class="info-label"><i class="fas fa-map-pin"></i> Lokasi</span>
+            <span class="info-value">Bogor, Jawa Barat</span>
+          </div>
+        </div>
+        <a href="#kontak" class="btn btn-primary">
+          <i class="fas fa-handshake"></i> Mari Berkolaborasi
+        </a>
+      </div>
+    </div>
   </div>
 </section>
 
-  <!-- ===== PROYEK ===== -->
-  <section id="proyek" class="section projects">
-    <div class="container">
-      <div class="section-header" data-aos="fade-up">
-        <span class="section-tag"><i class="fas fa-folder-open"></i> Proyek</span>
-        <h2 class="section-title">Proyek <span class="gradient-text">Saya</span></h2>
-        <p class="section-subtitle">Beberapa proyek yang telah saya kerjakan</p>
+<!-- ===== KEAHLIAN ===== -->
+<section id="keahlian" class="section skills">
+  <div class="container">
+    <div class="section-header" data-aos="fade-up">
+      <span class="section-badge"><i class="fas fa-laptop-code"></i> KEAHLIAN</span>
+      <h2 class="section-title">Fokus Pembelajaran & <span class="gradient-text">Keahlian</span></h2>
+      <p class="section-desc">Bidang yang saya pelajari dan kembangkan sebagai siswa TJKT SMK Wikrama Bogor.</p>
+    </div>
+    <div class="skill-grid">
+      <div class="skill-card" data-aos="fade-up" data-aos-delay="100">
+        <div class="skill-icon-wrap"><i class="fas fa-cloud"></i></div>
+        <h3>Cloud Computing</h3>
+        <p>Mempelajari virtualisasi, cloud infrastructure, VPS management, deployment server, dan teknologi cloud modern.</p>
       </div>
-
-      <div class="projects-grid">
-
-        <div class="project-card glass" data-aos="fade-up" data-aos-delay="100">
-          <div class="project-header">
-            <div class="project-icon" style="background: linear-gradient(135deg,#0097ce,#0057a8);">
-              <i class="fas fa-router"></i>
-            </div>
-            <div class="project-links">
-              <a href="#" class="project-link" title="Lihat Detail"><i class="fas fa-external-link-alt"></i></a>
-              <a href="#" class="project-link" title="Source Code"><i class="fab fa-github"></i></a>
-            </div>
-          </div>
-          <h3 class="project-title">Konfigurasi Router Mikrotik</h3>
-          <p class="project-desc">
-            Konfigurasi jaringan LAN/WAN menggunakan Router Mikrotik, termasuk setup DHCP Server, 
-            Firewall Rules, Bandwidth Management, dan Hotspot Gateway.
-          </p>
-          <div class="project-tags">
-            <span class="tag">Mikrotik</span>
-            <span class="tag">RouterOS</span>
-            <span class="tag">DHCP</span>
-            <span class="tag">Firewall</span>
-          </div>
-          <div class="project-footer">
-            <span class="project-status status-done"><i class="fas fa-check-circle"></i> Selesai</span>
-            <span class="project-year">2025</span>
-          </div>
-        </div>
-
-        <div class="project-card glass" data-aos="fade-up" data-aos-delay="200">
-          <div class="project-header">
-            <div class="project-icon" style="background: linear-gradient(135deg,#1ba0d7,#00508c);">
-              <i class="fas fa-network-wired"></i>
-            </div>
-            <div class="project-links">
-              <a href="#" class="project-link" title="Lihat Detail"><i class="fas fa-external-link-alt"></i></a>
-              <a href="#" class="project-link" title="Source Code"><i class="fab fa-github"></i></a>
-            </div>
-          </div>
-          <h3 class="project-title">Cisco Packet Tracer Lab</h3>
-          <p class="project-desc">
-            Simulasi jaringan enterprise menggunakan Cisco Packet Tracer, meliputi konfigurasi 
-            VLAN, Routing (Static & Dynamic), dan implementasi protokol jaringan.
-          </p>
-          <div class="project-tags">
-            <span class="tag">Cisco</span>
-            <span class="tag">VLAN</span>
-            <span class="tag">Routing</span>
-            <span class="tag">Packet Tracer</span>
-          </div>
-          <div class="project-footer">
-            <span class="project-status status-done"><i class="fas fa-check-circle"></i> Selesai</span>
-            <span class="project-year">2025</span>
-          </div>
-        </div>
-
-        <div class="project-card glass" data-aos="fade-up" data-aos-delay="300">
-          <div class="project-header">
-            <div class="project-icon" style="background: linear-gradient(135deg,#e44d26,#f16529);">
-              <i class="fab fa-html5"></i>
-            </div>
-            <div class="project-links">
-              <a href="#" class="project-link" title="Lihat Detail"><i class="fas fa-external-link-alt"></i></a>
-              <a href="#" class="project-link" title="Source Code"><i class="fab fa-github"></i></a>
-            </div>
-          </div>
-          <h3 class="project-title">Website HTML Personal</h3>
-          <p class="project-desc">
-            Pembuatan website personal menggunakan HTML5 dan CSS3 dengan tampilan responsive, 
-            modern, dan menerapkan prinsip-prinsip web design yang baik.
-          </p>
-          <div class="project-tags">
-            <span class="tag">HTML5</span>
-            <span class="tag">CSS3</span>
-            <span class="tag">Responsive</span>
-            <span class="tag">UI/UX</span>
-          </div>
-          <div class="project-footer">
-            <span class="project-status status-done"><i class="fas fa-check-circle"></i> Selesai</span>
-            <span class="project-year">2024</span>
-          </div>
-        </div>
-
-        <div class="project-card glass" data-aos="fade-up" data-aos-delay="400">
-          <div class="project-header">
-            <div class="project-icon" style="background: linear-gradient(135deg,#f7c948,#e67e00);">
-              <i class="fab fa-linux"></i>
-            </div>
-            <div class="project-links">
-              <a href="#" class="project-link" title="Lihat Detail"><i class="fas fa-external-link-alt"></i></a>
-              <a href="#" class="project-link" title="Source Code"><i class="fab fa-github"></i></a>
-            </div>
-          </div>
-          <h3 class="project-title">Linux Server Administration</h3>
-          <p class="project-desc">
-            Setup dan konfigurasi Linux Server (Ubuntu/Debian), termasuk instalasi web server 
-            Apache, konfigurasi SSH, manajemen user, dan monitoring sistem.
-          </p>
-          <div class="project-tags">
-            <span class="tag">Linux</span>
-            <span class="tag">Ubuntu</span>
-            <span class="tag">Apache</span>
-            <span class="tag">SSH</span>
-          </div>
-          <div class="project-footer">
-            <span class="project-status status-progress"><i class="fas fa-spinner fa-spin"></i> Progress</span>
-            <span class="project-year">2025</span>
-          </div>
-        </div>
-
+      <div class="skill-card" data-aos="fade-up" data-aos-delay="150">
+        <div class="skill-icon-wrap"><i class="fab fa-linux"></i></div>
+        <h3>Linux Administration</h3>
+        <p>Mengelola Ubuntu dan Debian, terminal Linux, user management, serta konfigurasi server dasar.</p>
+      </div>
+      <div class="skill-card" data-aos="fade-up" data-aos-delay="200">
+        <div class="skill-icon-wrap"><i class="fas fa-network-wired"></i></div>
+        <h3>Computer Networking</h3>
+        <p>Konfigurasi jaringan komputer, subnetting, routing, switching, Mikrotik dan Cisco Packet Tracer.</p>
+      </div>
+      <div class="skill-card" data-aos="fade-up" data-aos-delay="250">
+        <div class="skill-icon-wrap"><i class="fas fa-server"></i></div>
+        <h3>Server Administration</h3>
+        <p>Instalasi dan konfigurasi web server, DNS server, DHCP server, serta layanan jaringan berbasis Linux.</p>
+      </div>
+      <div class="skill-card" data-aos="fade-up" data-aos-delay="300">
+        <div class="skill-icon-wrap"><i class="fas fa-tools"></i></div>
+        <h3>Hardware & Troubleshooting</h3>
+        <p>Perakitan komputer, instalasi sistem operasi, serta troubleshooting hardware dan software.</p>
+      </div>
+      <div class="skill-card" data-aos="fade-up" data-aos-delay="350">
+        <div class="skill-icon-wrap"><i class="fas fa-project-diagram"></i></div>
+        <h3>Network Infrastructure</h3>
+        <p>Cabling, access point, topologi jaringan, dan implementasi jaringan skala kecil.</p>
       </div>
     </div>
-  </section>
-
-  <!-- ===== SERTIFIKAT ===== -->
-  <section id="sertifikat" class="section certificates">
-    <div class="container">
-      <div class="section-header" data-aos="fade-up">
-        <span class="section-tag"><i class="fas fa-certificate"></i> Sertifikat</span>
-        <h2 class="section-title">Sertifikat & <span class="gradient-text">Penghargaan</span></h2>
-        <p class="section-subtitle">Bukti kompetensi dan pencapaian saya</p>
-      </div>
-
-      <div class="certs-grid">
-
-        <div class="cert-card glass" data-aos="zoom-in" data-aos-delay="100">
-          <div class="cert-badge">
-            <i class="fas fa-award cert-icon" style="color:#f7c948;"></i>
-          </div>
-          <div class="cert-content">
-            <span class="cert-issuer"><i class="fas fa-building"></i> Mikrotik Academy</span>
-            <h3 class="cert-title">Mikrotik Certified Network Associate</h3>
-            <p class="cert-desc">Sertifikasi kompetensi konfigurasi dan manajemen jaringan menggunakan RouterOS Mikrotik.</p>
-            <div class="cert-footer">
-              <span class="cert-date"><i class="fas fa-calendar-alt"></i> 2025</span>
-              <a href="#" class="cert-btn">Lihat <i class="fas fa-arrow-right"></i></a>
-            </div>
-          </div>
-        </div>
-
-        <div class="cert-card glass" data-aos="zoom-in" data-aos-delay="200">
-          <div class="cert-badge">
-            <i class="fas fa-shield-halved cert-icon" style="color:#ff6b6b;"></i>
-          </div>
-          <div class="cert-content">
-            <span class="cert-issuer"><i class="fas fa-building"></i> Cisco Networking Academy</span>
-            <h3 class="cert-title">Cisco Cyber Security Essentials</h3>
-            <p class="cert-desc">Pelatihan dasar keamanan siber mencakup ancaman, kerentanan, dan perlindungan sistem jaringan.</p>
-            <div class="cert-footer">
-              <span class="cert-date"><i class="fas fa-calendar-alt"></i> 2025</span>
-              <a href="#" class="cert-btn">Lihat <i class="fas fa-arrow-right"></i></a>
-            </div>
-          </div>
-        </div>
-
-        <div class="cert-card glass" data-aos="zoom-in" data-aos-delay="300">
-          <div class="cert-badge">
-            <i class="fab fa-linux cert-icon" style="color:#f7c948;"></i>
-          </div>
-          <div class="cert-content">
-            <span class="cert-issuer"><i class="fas fa-building"></i> Linux Professional Institute</span>
-            <h3 class="cert-title">Linux Essentials</h3>
-            <p class="cert-desc">Sertifikasi pemahaman dasar sistem operasi Linux, command line, dan administrasi sistem.</p>
-            <div class="cert-footer">
-              <span class="cert-date"><i class="fas fa-calendar-alt"></i> 2024</span>
-              <a href="#" class="cert-btn">Lihat <i class="fas fa-arrow-right"></i></a>
-            </div>
-          </div>
-        </div>
-
-        <div class="cert-card cert-placeholder glass" data-aos="zoom-in" data-aos-delay="400">
-          <div class="cert-badge">
-            <i class="fas fa-plus cert-icon" style="color:#64ffda;"></i>
-          </div>
-          <div class="cert-content">
-            <span class="cert-issuer"><i class="fas fa-clock"></i> Upcoming</span>
-            <h3 class="cert-title">Sertifikat Berikutnya</h3>
-            <p class="cert-desc">Terus belajar dan mengembangkan diri. Sertifikat berikutnya akan segera hadir!</p>
-            <div class="cert-footer">
-              <span class="cert-date"><i class="fas fa-calendar-alt"></i> 2026</span>
-              <span class="cert-btn-muted">Coming Soon</span>
-            </div>
-          </div>
-        </div>
-
+    <div class="tools-section" data-aos="fade-up" data-aos-delay="100">
+      <h3 class="tools-title"><i class="fas fa-tools"></i> Tools & Technologies</h3>
+      <div class="tools-grid">
+        <div class="tool-card glass">Linux</div>
+        <div class="tool-card glass">Ubuntu</div>
+        <div class="tool-card glass">Debian</div>
+        <div class="tool-card glass">Mikrotik</div>
+        <div class="tool-card glass">Cisco</div>
+        <div class="tool-card glass">Packet Tracer</div>
+        <div class="tool-card glass">Cloud</div>
+        <div class="tool-card glass">Server</div>
+        <div class="tool-card glass">Terminal</div>
+        <div class="tool-card glass">VirtualBox</div>
+        <div class="tool-card glass">Git</div>
+        <div class="tool-card glass">HTML & CSS</div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- ===== KONTAK ===== -->
-  <section id="kontak" class="section contact">
-    <div class="container">
-      <div class="section-header" data-aos="fade-up">
-        <span class="section-tag"><i class="fas fa-envelope"></i> Kontak</span>
-        <h2 class="section-title">Hubungi <span class="gradient-text">Saya</span></h2>
-        <p class="section-subtitle">Ada pertanyaan atau ingin berkolaborasi? Jangan ragu untuk menghubungi saya!</p>
+<!-- ===== PROYEK ===== -->
+<section id="proyek" class="section projects">
+  <div class="container">
+    <div class="section-header" data-aos="fade-up">
+      <span class="section-tag"><i class="fas fa-folder-open"></i> Proyek</span>
+      <h2 class="section-title">Proyek <span class="gradient-text">Saya</span></h2>
+      <p class="section-subtitle">Beberapa proyek yang telah saya kerjakan</p>
+    </div>
+    <div class="projects-grid">
+      <div class="project-card glass" data-aos="fade-up" data-aos-delay="100">
+        <div class="project-header">
+          <div class="project-icon" style="background: linear-gradient(135deg,#0097ce,#0057a8);"><i class="fas fa-router"></i></div>
+          <div class="project-links">
+            <a href="#" class="project-link" title="Lihat Detail"><i class="fas fa-external-link-alt"></i></a>
+            <a href="#" class="project-link" title="Source Code"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+        <h3 class="project-title">Konfigurasi Router Mikrotik</h3>
+        <p class="project-desc">Konfigurasi jaringan LAN/WAN menggunakan Router Mikrotik, termasuk setup DHCP Server, Firewall Rules, Bandwidth Management, dan Hotspot Gateway.</p>
+        <div class="project-tags">
+          <span class="tag">Mikrotik</span><span class="tag">RouterOS</span><span class="tag">DHCP</span><span class="tag">Firewall</span>
+        </div>
+        <div class="project-footer">
+          <span class="project-status status-done"><i class="fas fa-check-circle"></i> Selesai</span>
+          <span class="project-year">2025</span>
+        </div>
       </div>
+      <div class="project-card glass" data-aos="fade-up" data-aos-delay="200">
+        <div class="project-header">
+          <div class="project-icon" style="background: linear-gradient(135deg,#1ba0d7,#00508c);"><i class="fas fa-network-wired"></i></div>
+          <div class="project-links">
+            <a href="#" class="project-link" title="Lihat Detail"><i class="fas fa-external-link-alt"></i></a>
+            <a href="#" class="project-link" title="Source Code"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+        <h3 class="project-title">Cisco Packet Tracer Lab</h3>
+        <p class="project-desc">Simulasi jaringan enterprise menggunakan Cisco Packet Tracer, meliputi konfigurasi VLAN, Routing (Static & Dynamic), dan implementasi protokol jaringan.</p>
+        <div class="project-tags">
+          <span class="tag">Cisco</span><span class="tag">VLAN</span><span class="tag">Routing</span><span class="tag">Packet Tracer</span>
+        </div>
+        <div class="project-footer">
+          <span class="project-status status-done"><i class="fas fa-check-circle"></i> Selesai</span>
+          <span class="project-year">2025</span>
+        </div>
+      </div>
+      <div class="project-card glass" data-aos="fade-up" data-aos-delay="300">
+        <div class="project-header">
+          <div class="project-icon" style="background: linear-gradient(135deg,#e44d26,#f16529);"><i class="fab fa-html5"></i></div>
+          <div class="project-links">
+            <a href="#" class="project-link" title="Lihat Detail"><i class="fas fa-external-link-alt"></i></a>
+            <a href="#" class="project-link" title="Source Code"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+        <h3 class="project-title">Website HTML Personal</h3>
+        <p class="project-desc">Pembuatan website personal menggunakan HTML5 dan CSS3 dengan tampilan responsive, modern, dan menerapkan prinsip-prinsip web design yang baik.</p>
+        <div class="project-tags">
+          <span class="tag">HTML5</span><span class="tag">CSS3</span><span class="tag">Responsive</span><span class="tag">UI/UX</span>
+        </div>
+        <div class="project-footer">
+          <span class="project-status status-done"><i class="fas fa-check-circle"></i> Selesai</span>
+          <span class="project-year">2024</span>
+        </div>
+      </div>
+      <div class="project-card glass" data-aos="fade-up" data-aos-delay="400">
+        <div class="project-header">
+          <div class="project-icon" style="background: linear-gradient(135deg,#f7c948,#e67e00);"><i class="fab fa-linux"></i></div>
+          <div class="project-links">
+            <a href="#" class="project-link" title="Lihat Detail"><i class="fas fa-external-link-alt"></i></a>
+            <a href="#" class="project-link" title="Source Code"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+        <h3 class="project-title">Linux Server Administration</h3>
+        <p class="project-desc">Setup dan konfigurasi Linux Server (Ubuntu/Debian), termasuk instalasi web server Apache, konfigurasi SSH, manajemen user, dan monitoring sistem.</p>
+        <div class="project-tags">
+          <span class="tag">Linux</span><span class="tag">Ubuntu</span><span class="tag">Apache</span><span class="tag">SSH</span>
+        </div>
+        <div class="project-footer">
+          <span class="project-status status-progress"><i class="fas fa-spinner fa-spin"></i> Progress</span>
+          <span class="project-year">2025</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-      <div class="contact-wrapper">
-        <div class="contact-info" data-aos="fade-right" data-aos-delay="100">
-          <h3>Mari Terhubung</h3>
-          <p>Saya selalu terbuka untuk diskusi tentang teknologi, peluang belajar, maupun kolaborasi proyek.</p>
+<!-- ===== SERTIFIKAT ===== -->
+<section id="sertifikat" class="section certificates">
+  <div class="container">
+    <div class="section-header" data-aos="fade-up">
+      <span class="section-tag"><i class="fas fa-certificate"></i> Sertifikat</span>
+      <h2 class="section-title">Sertifikat & <span class="gradient-text">Penghargaan</span></h2>
+      <p class="section-subtitle">Bukti kompetensi dan pencapaian saya</p>
+    </div>
+    <div class="certs-grid">
+      <div class="cert-card glass" data-aos="zoom-in" data-aos-delay="100">
+        <div class="cert-badge"><i class="fas fa-award cert-icon" style="color:#f7c948;"></i></div>
+        <div class="cert-content">
+          <span class="cert-issuer"><i class="fas fa-building"></i> Mikrotik Academy</span>
+          <h3 class="cert-title">Mikrotik Certified Network Associate</h3>
+          <p class="cert-desc">Sertifikasi kompetensi konfigurasi dan manajemen jaringan menggunakan RouterOS Mikrotik.</p>
+          <div class="cert-footer">
+            <span class="cert-date"><i class="fas fa-calendar-alt"></i> 2025</span>
+            <a href="#" class="cert-btn">Lihat <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="cert-card glass" data-aos="zoom-in" data-aos-delay="200">
+        <div class="cert-badge"><i class="fas fa-shield-halved cert-icon" style="color:#ff6b6b;"></i></div>
+        <div class="cert-content">
+          <span class="cert-issuer"><i class="fas fa-building"></i> Cisco Networking Academy</span>
+          <h3 class="cert-title">Cisco Cyber Security Essentials</h3>
+          <p class="cert-desc">Pelatihan dasar keamanan siber mencakup ancaman, kerentanan, dan perlindungan sistem jaringan.</p>
+          <div class="cert-footer">
+            <span class="cert-date"><i class="fas fa-calendar-alt"></i> 2025</span>
+            <a href="#" class="cert-btn">Lihat <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="cert-card glass" data-aos="zoom-in" data-aos-delay="300">
+        <div class="cert-badge"><i class="fab fa-linux cert-icon" style="color:#f7c948;"></i></div>
+        <div class="cert-content">
+          <span class="cert-issuer"><i class="fas fa-building"></i> Linux Professional Institute</span>
+          <h3 class="cert-title">Linux Essentials</h3>
+          <p class="cert-desc">Sertifikasi pemahaman dasar sistem operasi Linux, command line, dan administrasi sistem.</p>
+          <div class="cert-footer">
+            <span class="cert-date"><i class="fas fa-calendar-alt"></i> 2024</span>
+            <a href="#" class="cert-btn">Lihat <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="cert-card cert-placeholder glass" data-aos="zoom-in" data-aos-delay="400">
+        <div class="cert-badge"><i class="fas fa-plus cert-icon" style="color:#64ffda;"></i></div>
+        <div class="cert-content">
+          <span class="cert-issuer"><i class="fas fa-clock"></i> Upcoming</span>
+          <h3 class="cert-title">Sertifikat Berikutnya</h3>
+          <p class="cert-desc">Terus belajar dan mengembangkan diri. Sertifikat berikutnya akan segera hadir!</p>
+          <div class="cert-footer">
+            <span class="cert-date"><i class="fas fa-calendar-alt"></i> 2026</span>
+            <span class="cert-btn-muted">Coming Soon</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-          <div class="contact-items">
-            <div class="contact-item glass">
-              <div class="contact-icon-wrap">
-                <i class="fas fa-envelope"></i>
-              </div>
-              <div>
-                <span class="contact-label">Email</span>
-                <a href="mailto:dicky@example.com" class="contact-value">dickyapriyanto009@gmail.com</a>
-              </div>
-            </div>
-            <div class="contact-item glass">
-              <div class="contact-icon-wrap">
-                <i class="fas fa-map-marker-alt"></i>
-              </div>
-              <div>
-                <span class="contact-label">Lokasi</span>
-                <span class="contact-value">Bogor, Jawa Barat, Indonesia</span>
-              </div>
-            </div>
-            <div class="contact-item glass">
-              <div class="contact-icon-wrap">
-                <i class="fas fa-school"></i>
-              </div>
-              <div>
-                <span class="contact-label">Sekolah</span>
-                <span class="contact-value">SMK Wikrama Bogor</span>
-              </div>
+<!-- ===== KONTAK ===== -->
+<section id="kontak" class="section contact">
+  <div class="container">
+    <div class="section-header" data-aos="fade-up">
+      <span class="section-tag"><i class="fas fa-envelope"></i> Kontak</span>
+      <h2 class="section-title">Hubungi <span class="gradient-text">Saya</span></h2>
+      <p class="section-subtitle">Ada pertanyaan atau ingin berkolaborasi? Jangan ragu untuk menghubungi saya!</p>
+    </div>
+    <div class="contact-wrapper">
+      <div class="contact-info" data-aos="fade-right" data-aos-delay="100">
+        <h3>Mari Terhubung</h3>
+        <p>Saya selalu terbuka untuk diskusi tentang teknologi, peluang belajar, maupun kolaborasi proyek.</p>
+        <div class="contact-items">
+          <div class="contact-item glass">
+            <div class="contact-icon-wrap"><i class="fas fa-envelope"></i></div>
+            <div>
+              <span class="contact-label">Email</span>
+              <a href="mailto:dickyapriyanto009@gmail.com" class="contact-value">dickyapriyanto009@gmail.com</a>
             </div>
           </div>
-
-          <div class="social-links">
-            <h4>Media Sosial</h4>
-            <div class="social-icons">
-              <a href="#" class="social-icon" title="GitHub"><i class="fab fa-github"></i></a>
-              <a href="https://www.linkedin.com/in/mochammad-dicky-apriyanto-a30691385" class="social-icon" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-              <a href="https://www.instagram.com/nanocloud009" class="social-icon" title="Instagram"><i class="fab fa-instagram"></i></a>
-              <a href="https://wa.me/6281382673032" class="social-icon" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          <div class="contact-item glass">
+            <div class="contact-icon-wrap"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <span class="contact-label">Lokasi</span>
+              <span class="contact-value">Bogor, Jawa Barat, Indonesia</span>
+            </div>
+          </div>
+          <div class="contact-item glass">
+            <div class="contact-icon-wrap"><i class="fas fa-school"></i></div>
+            <div>
+              <span class="contact-label">Sekolah</span>
+              <span class="contact-value">SMK Wikrama Bogor</span>
             </div>
           </div>
         </div>
-
-       
+        <div class="social-links">
+          <h4>Media Sosial</h4>
+          <div class="social-icons">
+            <a href="#" class="social-icon" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/mochammad-dicky-apriyanto-a30691385" class="social-icon" title="LinkedIn" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.instagram.com/nanocloud009" class="social-icon" title="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/6281382673032" class="social-icon" title="WhatsApp" target="_blank"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="contact-form-wrapper" data-aos="fade-left" data-aos-delay="200">
+        <form class="contact-form glass" id="contact-form">
+          <div class="form-header">
+            <h3><i class="fas fa-paper-plane"></i> Kirim Pesan</h3>
+          </div>
+          <div class="form-group">
+            <label for="name"><i class="fas fa-user"></i> Nama Lengkap</label>
+            <input type="text" id="name" name="name" placeholder="Masukkan nama Anda" required />
+          </div>
+          <div class="form-group">
+            <label for="email"><i class="fas fa-envelope"></i> Alamat Email</label>
+            <input type="email" id="email" name="email" placeholder="email@contoh.com" required />
+          </div>
+          <div class="form-group">
+            <label for="subject"><i class="fas fa-tag"></i> Subjek</label>
+            <input type="text" id="subject" name="subject" placeholder="Subjek pesan" />
+          </div>
+          <div class="form-group">
+            <label for="message"><i class="fas fa-comment-dots"></i> Pesan</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tulis pesan Anda di sini..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">
+            <i class="fas fa-paper-plane"></i> Kirim Pesan
+          </button>
+          <div class="form-success" id="form-success">
+            <i class="fas fa-check-circle"></i> Pesan berhasil dikirim! Terima kasih.
+          </div>
+        </form>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- ===== FOOTER ===== -->
-  <footer class="footer">
-    <div class="footer-wave">
-      <svg viewBox="0 0 1440 80" preserveAspectRatio="none">
-        <path d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z" fill="currentColor" />
-      </svg>
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="footer-wave">
+    <svg viewBox="0 0 1440 80" preserveAspectRatio="none">
+      <path d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z" fill="currentColor" />
+    </svg>
+  </div>
+  <div class="footer-container">
+    <div class="footer-brand">
+      <a href="#beranda" class="nav-logo">
+        <span class="logo-bracket">&lt;</span>Dicky<span class="logo-bracket">/&gt;</span>
+      </a>
+      <p>Future Cloud Engineer & Linux Administrator</p>
     </div>
-    <div class="footer-container">
-      <div class="footer-brand">
-        <a href="#beranda" class="nav-logo">
-          <span class="logo-bracket">&lt;</span>Dicky<span class="logo-bracket">/&gt;</span>
-        </a>
-        <p>Future Cloud Engineer & Linux Administrator</p>
-      </div>
-      <div class="footer-links">
-        <a href="#beranda">Beranda</a>
-        <a href="#tentang">Tentang</a>
-        <a href="#keahlian">Keahlian</a>
-        <a href="#proyek">Proyek</a>
-        <a href="#sertifikat">Sertifikat</a>
-        <a href="#kontak">Kontak</a>
-      </div>
-      <div class="footer-social">
-        <a href="#" class="social-icon sm"><i class="fab fa-github"></i></a>
-        <a href="https://www.linkedin.com/in/mochammad-dicky-apriyanto-a30691385" class="social-icon sm"><i class="fab fa-linkedin-in"></i></a>
-        <a href="https://www.instagram.com/nanocloud009" class="social-icon sm"><i class="fab fa-instagram"></i></a>
-      </div>
-      <div class="footer-copy">
-        <p>© 2026 <strong>Mochammad Dicky Apriyanto</strong>. All Rights Reserved.</p>
-        <p>SMK Wikrama Bogor | TJKT</p>
-      </div>
+    <div class="footer-links">
+      <a href="#beranda">Beranda</a>
+      <a href="#tentang">Tentang</a>
+      <a href="#keahlian">Keahlian</a>
+      <a href="#proyek">Proyek</a>
+      <a href="#sertifikat">Sertifikat</a>
+      <a href="#kontak">Kontak</a>
     </div>
-  </footer>
+    <div class="footer-social">
+      <a href="#" class="social-icon sm"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/mochammad-dicky-apriyanto-a30691385" class="social-icon sm" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://www.instagram.com/nanocloud009" class="social-icon sm" target="_blank"><i class="fab fa-instagram"></i></a>
+    </div>
+    <div class="footer-copy">
+      <p>© 2026 <strong>Mochammad Dicky Apriyanto</strong>. All Rights Reserved.</p>
+      <p>SMK Wikrama Bogor | TJKT</p>
+    </div>
+  </div>
+</footer>
 
-  <!-- Back to Top -->
-  <button id="back-to-top" aria-label="Back to top">
-    <i class="fas fa-chevron-up"></i>
-  </button>
+<!-- Back to Top -->
+<button id="back-to-top" aria-label="Back to top">
+  <i class="fas fa-chevron-up"></i>
+</button>
 
-  <!-- AOS -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-  <script src="script.js"></script>
+<!-- AOS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script src="script.js"></script>
 </body>
 </html>

@@ -117,7 +117,7 @@ const phrases = [
   'Linux System Administrator',
   'Computer Networking Enthusiast',
   'Future Cloud Engineer',
-  'Future Infrastructure Engineer'
+  'Future Infrastructure Engineer',
 ];
 let phraseIndex = 0;
 let charIndex = 0;
@@ -364,4 +364,4 @@ document.querySelectorAll('.btn').forEach(btn => {
 });
 
 console.log('%c👨‍💻 Mochammad Dicky Apriyanto | TJKT SMK Wikrama Bogor', 'color: #64ffda; font-size: 14px; font-weight: bold;');
-console.log('%c🚀 Network Engineer | Cyber Security Enthusiast', 'color: #4fc3f7; font-size: 12px;');
+console.log('%c🚀 Cloud Engineer | Linux Administrator', 'color: #4fc3f7; font-size: 12px;');
